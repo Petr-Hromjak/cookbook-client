@@ -48,7 +48,7 @@ function Cookbook() {
   }
 
   useEffect(() => {
-    fetch(`http://localhost:8000/recipe/list`, {
+    fetch(`https://uu-cookbook-server-9e97a7bbe13a.herokuapp.com/recipe/list`, {
       method: "GET",
     }).then(async (response) => {
       const responseJson = await response.json();
@@ -61,7 +61,7 @@ function Cookbook() {
   }, []);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/ingredient/list`, {
+    fetch(`https://uu-cookbook-server-9e97a7bbe13a.herokuapp.com/ingredient/list`, {
       method: "GET",
     }).then(async (response) => {
       const responseJson = await response.json();

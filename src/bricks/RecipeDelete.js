@@ -17,7 +17,7 @@ export default function RecipeDelete({recipe, onDelete, onError}) {
 
     setDeleteRecipeCall({state: CallState.PENDING});
 
-    const res = await fetch(`http://localhost:8000/recipe/delete`, {
+    const res = await fetch(`https://uu-cookbook-server-9e97a7bbe13a.herokuapp.com/recipe/delete`, {
       method: "POST", headers: {
         "Content-Type": "application/json"
       }, body: JSON.stringify({id: recipe.id})
