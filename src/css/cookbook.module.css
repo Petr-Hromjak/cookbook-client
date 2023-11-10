@@ -1,0 +1,25 @@
+.cookbookPage {
+  padding: 40px 10px;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.cookbookNameHeader {
+  text-align: center;
+  background-color: #96658d;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  background-color: lightpink;
+  padding: 32px;
+}
